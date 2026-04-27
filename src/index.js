@@ -1,30 +1,28 @@
 class GuessingGame {
-  constructor() {}
-
   setRange(min, max) {
-      this.min = min;
-      this.max = max;
+    this.min = min;
+    this.max = max;
   }
 
   guess() {
-      let L = this.min;
-      let R = this.max;
-      let m = Math.ceil((L + R) / 2);
-      return m;
+    const L = this.min;
+    const R = this.max;
+    const m = Math.ceil((L + R) / 2);
+    return m;
   }
 
   lower() {
-      let L = this.min;
-      let R = this.max;
-      let m = Math.ceil((L + R) / 2);
-      this.max = m;
+    const L = this.min;
+    const R = this.max;
+    const m = Math.ceil((L + R) / 2);
+    this.max = m;
   }
 
   greater() {
-      let L = this.min;
-      let R = this.max;
-      let m = Math.ceil((L + R) / 2);
-      this.min = m;
+    const L = this.min;
+    const R = this.max;
+    const m = Math.ceil((L + R) / 2);
+    this.min = m;
   }
 }
 
